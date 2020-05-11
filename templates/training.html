@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if 'инженер' in profession %}
+<div style="text-align: center;">
+    <h2>Научные симуляторы для инженеров</h2>
+    <img src="{{engineer_url}}">
+</div>
+{% elif 'строитель' in occupation%}
+<div style="text-align: center;">
+    <h2>Научные симуляторы для строителей</h2>
+    <img src="{{builder_url}}">
+</div>
+{% else %}
+<div style="text-align: center;">
+    <h2>Научные стимуляторы</h2>
+    <img src="{{other_url}}">
+</div>
+{% endif %}
+{% endblock %}

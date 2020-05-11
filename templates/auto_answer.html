@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="static/css/style.css"/>{% endblock %}
+
+{% block content %}
+<div class="form_list">
+    <p>Фамилия: {{ form['surname'] }}</p>
+    <p>Имя: {{ form['name'] }}</p>
+    <p>Образование: {{ form['education'] }}</p>
+    <p>Профессия: {{ form['speciality'] }}</p>
+    <p>Пол: {{ form['sex'] }}</p>
+    <p>Мотивация: {{ form['motivation'] }}</p>
+    <p>Готовы остаться на Марсе?: {{ form['ready'] }}</p>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{
+  "members": [
+    {
+      "name": "Endy",
+      "surname": "Worton",
+      "photo": "img/male_boy.jpg",
+      "specialities": [
+        "playboy",
+        "philanthropist",
+        "millionaire"
+      ]
+    },
+    {
+      "name": "Emma",
+      "surname": "Watson",
+      "photo": "img/female_girl.jpg",
+      "specialities": [
+        "playboyess",
+        "philanthropistess",
+        "millionairess"
+      ]
+    },
+    {
+      "name": "Ridley",
+      "surname": "Scott",
+      "photo": "img/male_man.jpg",
+      "specialities": [
+        "capitan",
+        "engineer"
+      ]
+    }
+  ]
+}

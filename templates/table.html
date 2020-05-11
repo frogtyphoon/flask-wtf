@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Оформление каюты</h1>
+<table>
+    <tr>
+        <td>цвет стен</td>
+        <td>эмблема</td>
+    </tr>
+    <tr>
+        {% if sex == 'male' %}
+        <div>
+            {% if age < 21 %}
+            <div>
+                <td bgcolor="#999900"></td>
+            </div>
+            {% elif age > 21 %}
+            <div>
+                <td bgcolor="#CCCC33"></td>
+            </div>
+            {% endif %}
+        </div>
+        {% elif sex == 'female' %}
+        <div>
+            {% if age < 21 %}
+            <div>
+                <td bgcolor="#00FF66"></td>
+            </div>
+            {% elif age > 21 %}
+            <div>
+                <td bgcolor="#CCFF99"></td>
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+        <td>
+            {% if sex == 'male' %}
+            <div>
+                {% if age < 21 %}
+                <div>
+                    <img src="{{male_boy_url}}">
+                </div>
+                {% elif age > 21 %}
+                <div>
+                    <img src="{{male_man_url}}">
+                </div>
+                {% endif %}
+            </div>
+            {% elif sex == 'female' %}
+            <div>
+                {% if age < 21 %}
+                <div>
+                    <img src="{{female_girl_url}}">
+                </div>
+                {% elif age > 21 %}
+                <div>
+                    <img src="{{female_woman_url}}">
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+        </td>
+    </tr>
+</table>
+{% endblock %}

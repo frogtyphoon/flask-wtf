@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set member = members["members"]|random %}
+{{member["name"]}} {{member["surname"]}} <br>
+{% set member_photo = member["photo"] %}
+<div>
+    <img src="{{url_for('static', filename=member_photo)}}">
+</div>
+{{member["specialities"]|sort|join(', ')}}
+{% endblock %}
